@@ -1,0 +1,67 @@
+.card   {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: .5rem;
+    max-width: 300px;
+    margin: 0 auto;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 500ms ease-in-out;
+    position: absolute;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    gap: .25em;
+}
+
+.form-group:last-child{
+    margin: 0;
+}
+
+.form-group > label {
+    font-weight: bold;
+    font-size: .8em;
+    color: #333;
+    text-align: center;
+}
+
+.form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+}
+
+.step-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35em;
+    
+}
+p   {
+    text-align: center;
+}
+.card.active    {
+    transition-delay: 200ms;
+    /* display: block; */
+    transform: translateX(0);
+    opacity: 1;
+    position: relative;
+}
+.multi-step-form    {
+    overflow: hidden;
+    position: relative;
+    
+
+}
